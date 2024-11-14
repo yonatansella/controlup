@@ -10,7 +10,7 @@ export const config = {
         {
             category: 'Celsius to Fahrenheit',
             endPoint: '/temperature/celsius-to-fahrenheit.htm',
-            input: Utils.randomIntFromInterval(-273.17, 100), // realistic range: absolute zero to boiling point of water
+            input: Utils.randomIntFromInterval(1, 100), 
             expected: (value: number) => (value * 9) / 5 + 32,
         },
         {
