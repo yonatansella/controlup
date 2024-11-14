@@ -16,7 +16,7 @@ export class ConversionPage extends BasePage {
         await this.inputField.pressSequentially(value.toString());
     }
 
-    getConvertedValue = async (): Promise<number | null> => {
+    getConvertedValue = async (): Promise<string | null> => {
         const resultText = await this.resultField.textContent();
         if (!resultText) {
             throw new Error('Result not found!');
