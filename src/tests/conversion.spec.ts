@@ -14,10 +14,9 @@ test.describe('Metric Conversion Tests', () => {
     test(`Verify conversion for ${category}`, async ({ page }) => {
       const conversionPage = new ConversionPage(page);
       await conversionPage.navigate(`${config.urls.metricPage}${endPoint}`);
-
       await conversionPage.enterValue(input);
-      const actual = await conversionPage.getConvertedValue();
-      const expectedValue = expected(input);
+      const actual = (await conversionPage.getConvertedValue())?.toString();
+      const expectedValue = expected(input).toPrecision(5);
 
       assertion.softAssert(
         actual === expectedValue,

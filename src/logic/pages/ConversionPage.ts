@@ -22,6 +22,6 @@ export class ConversionPage extends BasePage {
             throw new Error('Result not found!');
         }
         const match = resultText.match(/=\s*([\d.]+)/);
-        return match ? parseFloat(match[1]) : null;
+        return match ? (match[1]) : null;
     }
 }
