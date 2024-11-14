@@ -15,6 +15,6 @@ test.describe('Weather Comparison Test', () => {
     const weatherApiTemp = await weatherApiService.getCurrentTemperature(zipCode);
 
     const gap = Math.abs(weatherComTemp - weatherApiTemp) / weatherComTemp * 100;
-    expect(gap).toBeLessThan(10); // Ensure temperatures are within a 10% difference
+    expect(gap).toBeLessThan(10);
   });
 });

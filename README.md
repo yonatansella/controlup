@@ -1,4 +1,3 @@
-```markdown
 # Playwright TypeScript Automation Tests
 
 This repository contains automation tests written in Playwright with TypeScript for various scenarios such as metric conversions and weather verification. Follow the instructions below to set up, run, and manage the tests.
