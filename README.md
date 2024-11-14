@@ -54,12 +54,6 @@ Run a specific test file:
 npx playwright test tests/weather.spec.ts
 ```
 
-### Run Tests Filtered by Title
-Run tests matching a specific title or tag:
-```bash
-npx playwright test --grep "Metric Conversion"
-```
-
 ### Run Tests in Headed Mode
 Run tests in headed mode (visible browser):
 ```bash
@@ -87,18 +81,4 @@ To view the report, open `playwright-report/index.html` in your browser.
 - **`src/tests/`**  
   Contains the test scripts.
 
----
 
-## Custom Commands
-
-### Update Dependencies
-```bash
-npm update
-```
-
-## Notes
-
-- Ensure your Node.js version is compatible with Playwright.
-
-For further details, check the [Playwright documentation](https://playwright.dev/).
-```
