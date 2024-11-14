@@ -11,12 +11,12 @@ export class ConversionPage extends BasePage {
         this.resultField = page.locator('#answerDisplay');
     }
 
-    async enterValue(value: number) {
+    enterValue = async (value: number) => {
         await this.inputField.clear();
         await this.inputField.pressSequentially(value.toString());
-}
+    }
 
-    async getConvertedValue(): Promise<number | null> {
+    getConvertedValue = async (): Promise<number | null> => {
         const resultText = await this.resultField.textContent();
         if (!resultText) {
             throw new Error('Result not found!');
