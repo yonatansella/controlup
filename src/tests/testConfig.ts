@@ -10,7 +10,7 @@ export const config = {
         {
             category: 'Celsius to Fahrenheit',
             endPoint: '/temperature/celsius-to-fahrenheit.htm',
-            input: Utils.randomIntFromInterval(1, 100), 
+            input: Utils.randomIntFromInterval(-273.15, 1000), 
             expected: (value: number) => (value * 9) / 5 + 32,
         },
         {
